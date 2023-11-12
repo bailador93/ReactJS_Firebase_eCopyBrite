@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { AppRouting } from "./core/components/AppRouting";
+import { AuthUserProvider } from "./core/components/_hooks/_Context/AuthUserContext";
+import { ModalAppProvider } from "./core/components/_hooks/_Context/ModalAppContext";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import './core/assets/css/App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+const App = () => {
+  return <>
+    <AuthUserProvider>
+      <ModalAppProvider>
+        <AppRouting />
+      </ModalAppProvider>
+    </AuthUserProvider>
+  </>;
 }
 
 export default App;

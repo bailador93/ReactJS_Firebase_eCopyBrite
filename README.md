@@ -36,7 +36,7 @@ To run this app you must do this:
 ## Used Libraries
 
 ```bash
-  Bootstrap VERSON ^5.3.1
+  Bootstrap VERSION ^5.3.1
   Firebase VERSION ^10.2.0
   Firebase Admin VERSION ^11.10.1
   React Bootstrap VERSION ^2.8.0
